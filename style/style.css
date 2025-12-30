@@ -1,0 +1,442 @@
+:root{
+    --color:rgba(225, 227, 230, 0.464);
+}
+::selection{
+    color:white;
+    background-color:aqua;
+}
+body{
+    margin:0;
+    background-color: var(--color);
+    box-sizing: border-box;
+    
+}
+header{
+    width:70%;
+    height:60px;
+    background-color:white;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+     box-shadow: 2px 2px 2px 2px  rgb(228, 225, 225); 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+nav{
+    width:90%;
+    height:60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div{
+    height:100%;
+}
+#left{
+    width:103px;
+    display:flex;
+    
+}
+#center{
+    width:400px;
+    display: flex;
+    justify-content: space-between;
+}
+#right{
+    width:250px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.pageName{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+#image-1:hover{
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
+a{
+    text-decoration: none;
+    color:black;
+    
+}
+.center{
+    display: flex;
+    align-items: center;
+    height:100%;
+    font-size: 1rem;
+    
+}
+#dash{
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    background:linear-gradient(90deg,rgb(24, 152, 221) 0%,rgb(8, 78, 177)100%);
+    color:white;
+    padding-left: 5px;
+    padding-right:5px;
+}
+.right{
+    height:100%; 
+    display: flex;
+    align-items: center;
+}
+#online{
+    background-color: rgb(57, 219, 21);
+    color:rgb(12, 115, 46);
+    padding-left: 3px;
+    padding-right: 3px;
+    height:80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+} 
+#man{
+    height:100%;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+#checkbox{
+    display: none;
+}
+#label{
+   display: none;
+
+}
+#hidden{
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+        position: absolute;
+        top:0px;
+        left:0px;
+        width:45vw;
+        height:100vh;
+        background-color: white;
+        opacity: 0;
+    
+}
+.hi{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+} 
+
+#setting{
+    width:30px;
+    height:auto;
+}
+#bell{
+    width:30px;
+    height:auto;
+}
+#search{
+    width:30px;
+    height:auto;
+}
+#search-dashbord{
+    display: none;
+
+  }
+  #setting-dashbord{
+    display: none;
+  }
+  #bell-dashbord{
+    display: none;
+  }
+@media screen and (max-width:1400px) and (min-width:800px){
+    #hidden{
+        gap:70px;
+    }
+    #left{
+      width:20vw;
+    }
+    #right{
+       width:25vw;
+    }
+    #center{
+        display: none;
+        
+    }
+    #label{
+        position: relative;
+        left: 20px;
+        margin-right:20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:17px;
+        height:15px;
+        
+        
+    }
+    .line{
+        display: block;
+        width:100%;
+        height:3px;
+        background-color: black;
+    }
+    .hi{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        padding-left: 2.5rem;
+
+
+    } 
+    #checkbox:checked ~ #hidden{
+        opacity: 1;
+    }
+    #dashboard{
+        margin-left: 2.5rem;
+        padding: 5px;
+        margin-top: 20px;
+        background:linear-gradient(90deg,rgb(24, 152, 221) 0%,rgb(8, 78, 177)100%);
+        color:white;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+}
+    #onnn{
+        margin-top: 20px;
+    }
+#search{
+    width:25px;
+    height:auto;
+
+  }
+  #setting{
+    width:25px;
+    height:auto;
+  }
+  #bell{
+    width:25px;
+    height:auto;
+  }
+}
+@media screen and (max-width:800px) and (min-width:450px){
+    #left{
+        width:20vw;
+      }
+      #right{
+         width:25vw;
+      }
+      #center{
+          display: none;
+          
+      }
+      #label{
+          position: relative;
+          left: 20px;
+          margin-right:20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width:17px;
+          height:15px;
+          
+          
+      }
+      .line{
+          display: block;
+          width:100%;
+          height:3px;
+          background-color: black;
+      }
+      .hi{
+          text-decoration: none;
+          color: black;
+          font-size: 18px;
+          padding-left: 2.5rem;
+  
+  
+      } 
+      #checkbox:checked ~ #hidden{
+          opacity: 1;
+      }
+      #dashboard{
+          margin-left: 2.5rem;
+          padding: 5px;
+          margin-top: 20px;
+          background:linear-gradient(90deg,rgb(24, 152, 221) 0%,rgb(8, 78, 177)100%);
+          color:white;
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+  }
+      #onnn{
+          margin-top: 20px;
+      }
+  #search{
+    display: none;
+
+  }
+  #setting{
+    display: none;
+  }
+  #bell{
+    display: none;
+  }
+  #online{
+    font-size: 14px;
+  }
+  #label{
+    left:10px;
+  }
+  #search-dashbord{
+    display: block;
+    width:2rem;
+    height:auto;
+    margin-left:2.5rem;
+
+  }
+  #setting-dashbord{
+    display: block;
+    width:2rem;
+    height:auto;
+    margin-left:2.5rem;
+  }
+  #bell-dashbord{
+    display: block;
+    width:2rem;
+    height:auto;
+    margin-left:2.5rem;
+  }
+#hidden{
+    gap:0.5rem;
+}
+}
+@media screen and (max-width:450px) and (min-width:270px){
+    #left{
+        width:20vw;
+      }
+      #right{
+         width:25vw;
+      }
+      #center{
+          display: none;
+          
+      }
+      #label{
+          position: relative;
+          left: 20px;
+          margin-right:20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width:17px;
+          height:15px;
+          
+          
+      }
+      .line{
+          display: block;
+          width:100%;
+          height:3px;
+          background-color: black;
+      }
+      .hi{
+          text-decoration: none;
+          color: black;
+          font-size: 1rem;
+          padding-left: 2.5rem;
+  
+  
+      } 
+      #checkbox:checked ~ #hidden{
+          opacity: 1;
+      }
+      #dashboard{
+          margin-left: 2.5rem;
+          padding: 5px;
+          margin-top: 20px;
+          background:linear-gradient(90deg,rgb(24, 152, 221) 0%,rgb(8, 78, 177)100%);
+          color:white;
+          border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+  }
+      #onnn{
+          margin-top: 20px;
+      }
+  #search{
+    display: none;
+
+  }
+  #setting{
+    display: none;
+  }
+  #bell{
+    display: none;
+  }
+  #online{
+    font-size: 14px;
+  }
+  #label{
+    left:10px;
+  }
+  #search-dashbord{
+    display: block;
+    width:1.5rem;
+    height:auto;
+    margin-left:2.5rem;
+
+  }
+  #setting-dashbord{
+    display: block;
+    width:1.5rem;
+    height:auto;
+    margin-left:2.5rem;
+  }
+  #bell-dashbord{
+    display: block;
+    width:1.5rem;
+    height:auto;
+    margin-left:2.5rem;
+  }
+#hidden{
+    gap:0.5rem;
+}
+#image-1{
+    width:2rem;
+}
+header{
+    height:8.5vh;
+    width:80vw;
+}
+.pageName{
+    font-size: 1rem;
+}
+
+}
