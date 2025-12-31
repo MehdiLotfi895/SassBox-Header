@@ -237,7 +237,7 @@ a{
 }
 @media screen and (max-width:800px) and (min-width:450px){
      #image-1{
-        margin-left: 0.5rem;
+        margin-left:0.5rem;
     }
     #left{
         width:20vw;
@@ -427,6 +427,7 @@ a{
 }
 #image-1{
     width:2rem;
+     margin-left: 0.3rem;
 }
 header{
     height:8.5vh;
@@ -435,7 +436,5 @@ header{
 .pageName{
     font-size: 1rem;
 }
- #image-1{
-        margin-left: 0.3rem;
-    }
+
 }
